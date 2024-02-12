@@ -1,0 +1,143 @@
+@media only screen and (max-width: 768px) {
+
+  /* For mobile phones: */
+  .bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .bar .fa-bars,
+  .fa-xmark {
+    display: block;
+
+  }
+
+  .sticky .bars i {
+    color: black;
+  }
+
+  .navbar {
+    flex-direction: column;
+    /* padding: 20px 0; */
+    /* position: relative; */
+  }
+
+  .navbar .navbar__items {
+    align-items: flex-start;
+    background-color: aliceblue;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    transition: all 0.3s;
+    display: none;
+  }
+
+  .navbar .extra {
+    display: flex !important;
+    z-index: 1;
+    position: absolute;
+    align-items: center;
+    top: 90px;
+    transition: 0.5s;
+    left: 0;
+  }
+
+  .navbar__items .navbar__item {
+    border: 1px solid #7B68EE;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+
+  .navbar__items .navbar__item:hover {
+    background-color: rgb(0, 0, 0, 0.1);
+  }
+
+  .navbar__items .navbar__item a {
+    color: black;
+    font-size: 1.2rem;
+
+  }
+
+  .background {
+    height: 1000px;
+  }
+
+  .navbtn {
+    display: none;
+  }
+
+  .heading {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 2%;
+  }
+
+  .aside__img img {
+    width: 300px;
+  }
+
+  .aboutcompany {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .logo {
+    width: 350px;
+  }
+
+  .subscribe {
+    flex-direction: column;
+  }
+
+  .footer__details {
+    row-gap: 30px;
+  }
+
+  .whyChooseUs {
+    flex-direction: column;
+  }
+
+  .it__services .flex1 div,
+  .flex2 div {
+    padding: 10px 5px;
+  }
+  .whyChooseUs__details{
+    padding: 0;
+  }
+  .inputs{
+    width: 100%;
+    padding: 0;
+    border-radius: 5px;
+  }
+  #email{
+    padding: 10px 7px;
+  }
+  .inputs__btn{
+    padding: 0 7px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+
+  /* For mobile computer: */
+  .navbar,
+  .heading,
+  .whyChooseUs {
+    padding: 10px 15%;
+  }
+
+  .service__section,
+  .aboutcompany {
+    padding: 20px 15%;
+  }
+
+  .footer__details,
+  .subscribe {
+    padding: 20px 15% !important;
+  }
+}
